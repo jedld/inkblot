@@ -32,6 +32,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'barby', '~> 0.6.8'
   spec.add_dependency 'mini_magick', '~> 4.10.1'
-  spec.add_dependency 'rqrcode', '~> 1.1.2'
+  spec.add_dependency 'rqrcode', '~> 1.2.0'
   spec.add_dependency 'tty-command', '~> 0.9.0'
 end
