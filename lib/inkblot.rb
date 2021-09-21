@@ -17,7 +17,6 @@ module Inkblot
     # If +paths+ are appended, joins them to the base with '/'
     def vendor_path(*paths)
       @vendor_path ||= File.join(__dir__, '..', 'vendor')
-      end
 
       return @vendor_path if paths.empty?
 
