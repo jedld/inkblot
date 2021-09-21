@@ -16,10 +16,7 @@ module Inkblot
     # assets like python code and html templates.
     # If +paths+ are appended, joins them to the base with '/'
     def vendor_path(*paths)
-      @vendor_path ||= String.new(locate_gem_folder).tap do |str|
-        str << '/gems'
-        str << "/inkblot-#{Inkblot::VERSION}"
-        str << '/vendor'
+      @vendor_path ||= File.join(__dir__, '..', 'vendor')
       end
 
       return @vendor_path if paths.empty?
